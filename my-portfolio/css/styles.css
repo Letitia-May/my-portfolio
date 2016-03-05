@@ -18,21 +18,20 @@ body {
   justify-content: center; }
   .intro h1, .intro h2 {
     text-align: center;
-    color: #fff;
+    color: #E7E7E5;
     text-transform: uppercase; }
   .intro h1 {
-    font-size: 3rem;
-    padding-bottom: 20px; }
+    font-size: 3rem; }
   .intro h2 {
-    font-size: 1.5rem;
-    padding-top: 20px; }
+    font-size: 1.5rem; }
   .intro hr {
-    border: none; }
+    border: none;
+    margin: 20px 0; }
   .intro .line {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
-    border-top: 1px solid #fff; }
+    border-top: 1px solid #E7E7E5; }
     .intro .line:after {
       content: ' ';
       height: 8px;
@@ -40,6 +39,21 @@ body {
       bottom: 4px;
       left: calc(50% - 4px);
       width: 8px;
-      background: #fff;
+      background: #E7E7E5;
       transform: rotate(45deg);
       display: block; }
+  .intro .social {
+    text-align: center;
+    display: flex;
+    letter-spacing: 0;
+    margin-top: 25px; }
+    .intro .social a {
+      flex: 1;
+      color: #E7E7E5;
+      padding-top: 8px; }
+      .intro .social a:visited, .intro .social a:active {
+        color: #E7E7E5; }
+      .intro .social a:hover {
+        padding-top: 0;
+        position: relative;
+        -webkit-transition: padding-top 0.2s ease; }
