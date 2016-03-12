@@ -9,7 +9,6 @@
 body {
 	font: 1em/1.5 'Raleway', sans-serif;
 	font-weight: 300;
-	letter-spacing: 0.5rem;
 }
 
 .intro {
@@ -22,9 +21,11 @@ body {
 	justify-content: center;
 
 	h1, h2 {
-		text-align:center;
+		text-align: center;
 		color: $color-light;
 		text-transform: uppercase;
+		letter-spacing: 0.5rem;
+		text-indent: 0.5rem;
 	}
 
 	h1 {
@@ -37,13 +38,12 @@ body {
 
 	hr {
 		border: none;
-		margin: 20px 0;
+		margin: 10px 0;
 	}
 
 	.line {
 		max-width: 800px;
 		width: 100%;
-		margin: 0 auto;
 		border-top: 1px solid $color-light;
 
 		&:after {
