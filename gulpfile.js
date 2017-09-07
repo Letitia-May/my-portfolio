@@ -12,14 +12,14 @@ gulp.task('reloadbrowser', function(){
 	browserSync.reload();
 });
 gulp.task('sass', function(){
-  return gulp.src('my-portfolio/scss/styles.scss')
+  return gulp.src('scss/styles.scss')
     .pipe(sass()) // Using gulp-sass
-    .pipe(gulp.dest('my-portfolio/css'))
+    .pipe(gulp.dest('css'))
     .pipe(browserSync.stream());
 });
 
 gulp.task('watch', function(){
-  gulp.watch('my-portfolio/scss/**/*.scss', ['sass', 'reloadbrowser']); 
+  gulp.watch('scss/**/*.scss', ['sass', 'reloadbrowser']);
   // Other watchers
 });
 
@@ -30,6 +30,6 @@ gulp.task('serve', ['sass'], function() {
         proxy: "chloe.dev"
     });
 
-    gulp.watch("my-portfolio/scss/*.scss", ['sass']);
-    gulp.watch("my-portfolio/*.html").on('change', browserSync.reload);
+    gulp.watch("scss/*.scss", ['sass']);
+    gulp.watch("*.html").on('change', browserSync.reload);
 });
